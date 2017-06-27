@@ -3,20 +3,48 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Card生成器</title>
+		<link rel="stylesheet" href="css/main-PC.css">
 	</head>
 	<body>
 		<!-- 如果pc可用 -->
 		<div id="page">
-			<!-- 选择卡片 -->
-			<div class="step_1"></div>
-			<!-- 写下话语 -->
-			<div class="step_2"></div>
-			<!-- 卡片的相关选项 -->
-			<div class="step_3"></div>
-		</div>
-		<!-- 如果是mobile（以后迟早会加入支持的） -->
-		<div id="mobile">
-			<p>移动端不受支持！</p>
+			<!-- 为了实现元素居中，又搞了一个外层div -->
+			<div id="outer">
+
+				<!-- 选择卡片 -->
+				<div id="step_1">
+					<!-- 提示语 -->
+					<div class="tip_chooseCard">选择一张卡片：</div>
+					<!-- 卡片选择器 -->
+					<div class="chooser"></div>
+				</div>
+
+				<!-- 写下话语 -->
+				<div id="step_2">
+					<!-- 提示语 -->
+					<div class="tip_enterTitle">写下卡片的标题：</div>
+					<!-- 卡片标题 -->
+					<div class="title"></div>
+
+					<!-- 提示语 -->
+					<div class="tip_enterContains">写下卡片的内容吧：</div>
+					<!-- 卡片内容 -->
+					<div class="contains"></div>
+				</div>
+
+				<!-- 卡片的详细选项 -->
+				<div id="step_3">
+					<!-- 贺卡的收发者 -->
+					<div class="from">来自</div>
+					<div class="to">给</div>
+				</div>
+			</div>
+
+			<!-- 如果是mobile（以后迟早会加入支持的） -->
+			<div id="mobile">
+				<p>移动端目前不受支持！</p>
+			</div>
+
 		</div>
 
 		<!-- 加载require.js -->

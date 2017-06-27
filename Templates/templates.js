@@ -5,8 +5,12 @@
  */
 define({
 	// 模板的名称
-	names: [
+	names: {
 		// 模板：爱你
-		'Love'
-	]
+		'Love': {
+			'author': 'MidAutumnMoon',
+			'page': null,
+			'introduction': '爱你，永永远远！'
+		}
+	}
 });

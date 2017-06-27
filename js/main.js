@@ -10,6 +10,9 @@ require.config({
 		// =======================================
 
 		// =========== 网页渲染模块 =================
+		renderer: 'page-renderer/Renderer',                     // 大的渲染器
+
+		chooseCard: 'page-renderer/ChooseCard',                 // 选择卡片
 		// ========================================
 
 		// =========== 模板渲染&生成模块 ============
@@ -21,6 +24,7 @@ require.config({
 
 		// ============= 模板信息 ==================
 		allTemplates: '../Templates/templates'
+		// ========================================
 	}
 });
 
@@ -36,4 +40,10 @@ require(['platform', 'jquery'], function (p, $) {
 		// 如果是移动端就不支持了（补一补CSS）
 		mobile.show();
 	}
+	// 如果是PC的话就开始渲染页面吧
+	page.show();
+});
+
+require(['renderer'], function (renderer) {
+	renderer.startRenderer();
 });

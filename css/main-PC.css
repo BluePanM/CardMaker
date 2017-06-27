@@ -1,6 +1,50 @@
+html {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
 #page {
 	display: block;
+	margin: 0;
+	padding: 0;
+	/* 下面实现居中 */
+	float: left;
+	position: relative;
+	left: 50%;
+
+	top: 40%;
+}
+#outer {
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	float: left;
+	position: relative;
+	right: 50%;
+	bottom: 50%;
+}
+
+#step_1 #step_2 #step_3 {
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	float: left;
+}
+#step_1 {
 	width: 100px;
-	height: 100px;
 	background-color: blue;
+}
+#step_2 {
+	background-color: red;
+}
+#step_3 {
+	background-color: yellow;
 }
