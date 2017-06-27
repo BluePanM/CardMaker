@@ -29,6 +29,10 @@ body {
 	position: relative;
 	right: 50%;
 	bottom: 50%;
+
+	overflow: hidden;
+	width: 600px;
+
 }
 
 #step_1 #step_2 #step_3 {
@@ -39,7 +43,6 @@ body {
 	float: left;
 }
 #step_1 {
-	width: 100px;
 	background-color: blue;
 }
 #step_2 {
